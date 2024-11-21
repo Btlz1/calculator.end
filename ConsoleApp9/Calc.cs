@@ -1,6 +1,8 @@
 ﻿using System;
 
-class Program
+namespace Proj
+{ 
+class Calc
 {
     static void Main(string[] args)
     {
@@ -12,8 +14,8 @@ class Program
             string input = Console.ReadLine();
             if (input.ToLower() == "help")
             {
-                Console.WriteLine("Введите первое число, затем нажмите ПРОБЕЛ, затем введите знак операции (+,-,*,/,%,^) затем второе число и ENTER");
-                
+                Console.WriteLine("Введите первое число, затем нажмите ПРОБЕЛ, полсе " +
+                    "введите знак операции (+,-,*,/,%,^) + ПРОБЕЛ, затем второе число и ENTER");  
             }
 
             if (input.ToLower() == "exit")
@@ -106,4 +108,6 @@ class Program
         return y;
     }
 
+    
+}
 }
